@@ -83,9 +83,28 @@
 .main iframe {
     min-width: 300px;
 }
- .row{
-   flex-wrap: nowrap;
- }
+
+.row {
+    flex-wrap: nowrap;
+}
+
+/*releases*/
+.release {
+    overflow: auto;
+    height: 85vh;
+}
+
+.release ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.release li {
+    list-style: none;
+    padding: 2rem;
+}
 
 
 @media (max-width: 992px) {
@@ -98,4 +117,5 @@
     .main p {
         font-size: 1.5rem;
     }
+
 }
