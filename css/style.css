@@ -1,0 +1,101 @@
+.header {
+    height: 6vh;
+    width: 100vw;
+}
+
+.nav {
+    background-color: black;
+}
+
+.nav a {
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #c4302b;
+}
+
+.nav a:focus {
+    color: rgb(255, 116, 116);
+
+}
+
+.burger {
+    background-color: rgb(26, 26, 26);
+}
+
+.nav img {
+    width: 125px;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: rgb(26, 26, 26);
+    height: 5vh;
+    width: 100vw;
+}
+
+.bottonMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottonMenu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.bottonMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+.bottonMenu a:hover {
+    color: #c4302b;
+}
+
+/*main*/
+
+.main {
+    height: 89vh;
+    background-color: rgb(49, 49, 49);
+    background-image: url(../img/Capa\ 4.png);
+    background-size: cover;
+    width: 100vw;
+    overflow: auto;
+}
+
+.main p {
+    font-size: 2rem;
+    color: white;
+    min-width: 300px;
+}
+
+.home {
+    padding: 20vh;
+}
+
+.main iframe {
+    min-width: 300px;
+}
+ .row{
+   flex-wrap: nowrap;
+ }
+
+
+@media (max-width: 992px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .main p {
+        font-size: 1.5rem;
+    }
+}
