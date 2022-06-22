@@ -26,10 +26,21 @@
     background-color: rgb(26, 26, 26);
 }
 
-.nav img {
-    width: 125px;
+.nav li {
+    border-radius: 12px;
+    transition: 0.5s;
 }
 
+.nav li:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+.nav img {
+    width: 125px;
+    animation-name: rotarLogo;
+    animation-duration: 1s;
+
+}
 
 /*Footer*/
 .footer {
@@ -99,42 +110,72 @@
 }
 
 /*contacto*/
-.contacto{
+.contacto {
     padding: 5rem;
     background-color: rgba(255, 255, 255, 0.185);
     margin-top: 4rem;
     border-radius: 15px;
 }
- .contacto label{
-    color: white;
- }
 
- .contacto button{
+.contacto label {
+    color: white;
+}
+
+.contacto button {
     background-color: #c4302b;
     border-color: #c4302b;
- }
+    transition: 1s;
+}
 
- /*sin terminar*/
- .main h1{
+.contacto input[type="checkbox"]:checked {
+    background-color: #c4302b;
+    border: #c4302b;
+}
+
+/*sin terminar*/
+.main h1 {
     font-size: 5rem;
     color: #c4302b;
- }
+}
 
- .main section{
+.main section {
     margin-top: 30vh;
     text-align: center;
- }
+}
 
- /*media*/
-.media{
+/*media*/
+.media {
     margin-top: 210px;
     text-align: center;
 }
-.titulo{
+
+.titulo {
     margin-top: 2rem;
     font-size: 3rem;
     color: #c4302b;
     text-align: center;
+}
+
+@keyframes rotarLogo {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 @media (max-width: 992px) {
